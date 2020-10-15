@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
     blogEnabled: true,
     name: 'Ryan Fitzgerald',
     title: `Ryan Fitzgerald | Full-Stack Developer`,
