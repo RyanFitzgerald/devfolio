@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import get from 'lodash/get';
 import React from 'react';
 
 import BlogPosts from '../components/blog-posts';
@@ -9,9 +8,12 @@ import SEO from '../components/seo';
 
 const Index = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
-  const blogEnabled = get(data, 'site.siteMetadata.blogEnabled', false);
 
-  if (!blogEnabled) return null;
+  if (!posts || !posts.length) {
+    // Send them home
+    window.location.replace(`/`);
+    return null;
+  }
 
   return (
     <Layout>
@@ -28,7 +30,6 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        blogEnabled
         name
         title
         description

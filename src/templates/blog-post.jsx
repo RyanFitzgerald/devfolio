@@ -35,7 +35,6 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
-        blogEnabled
         name
         title
         description

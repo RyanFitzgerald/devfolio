@@ -17,15 +17,15 @@ const Index = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   const experience = get(data, 'site.siteMetadata.experience', false);
   const skills = get(data, 'site.siteMetadata.skills', false);
-  const blogEnabled = get(data, 'site.siteMetadata.blogEnabled', false);
+  const noBlog = !posts || !posts.length;
 
   return (
     <Layout>
       <SEO />
-      <Header metadata={data.site.siteMetadata} />
+      <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
       {projects && projects.length && <SectionProjects projects={projects} />}
-      {blogEnabled && posts && posts.length && <SectionBlog posts={posts} />}
+      {!noBlog && <SectionBlog posts={posts} />}
       {experience && experience.length && (
         <SectionExperience experience={experience} />
       )}
@@ -40,7 +40,6 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        blogEnabled
         name
         title
         description

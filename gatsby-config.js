@@ -1,14 +1,22 @@
 module.exports = {
   siteMetadata: {
+    // Site URL for when it goes live
     siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
-    blogEnabled: true,
+    // Your Name
     name: 'Ryan Fitzgerald',
+    // Main Site Title
     title: `Ryan Fitzgerald | Full-Stack Developer`,
+    // Description that goes under your name in main bio
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    // Optional: Twitter account handle
     author: `@rfitzio`,
+    // Optional: Github account URL
     github: `https://github.com/ryanfitzgerald`,
+    // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    // Content of the About Me section
+    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
         name: 'Devfolio',
@@ -29,6 +37,7 @@ module.exports = {
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
+    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
         name: 'Acme Corp',
@@ -46,6 +55,7 @@ module.exports = {
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
+    // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
         name: 'Languages & Frameworks',
@@ -109,7 +119,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `ADD YOUR TRACKING ID HERE`, // Optional Google Analytics
       },
     },
     {
@@ -119,9 +129,9 @@ module.exports = {
         short_name: `devfolio`,
         start_url: `/`,
         background_color: `#663399`,
-        theme_color: `#663399`,
+        theme_color: `#663399`, // This color appears on mobile
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
       },
     },
   ],
