@@ -1,7 +1,7 @@
 {
   "name": "devfolio",
   "private": true,
-  "description": "A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS",
+  "description": "A modern and production-ready personal portfolio + blog template built with GatsbyJs and TailwindCSS",
   "version": "0.1.0",
   "author": "Ryan Fitzgerald",
   "dependencies": {
@@ -38,7 +38,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
