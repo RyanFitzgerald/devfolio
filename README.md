@@ -179,6 +179,35 @@ You can easily modify those pages and create new ones. Gatsby core automatically
 
 ### Adding or Updating Styles
 
+Devfolio is fully styled with [TailwindCSS](https://tailwindcss.com/) with the exception of a couple minor additional styles, as found in `src/css/index.css`.
+
+When the GatsbyJS development server is running, you'll have access to all of the Tailwind styles, however once you deploy (i.e. build the static assets), PurgeCSS runs against them and only leaves the Tailwind styles that were actually used. This is beneficial because it keeps the build size considerably smaller, however there are some important considerations to keep in mind in order to keep the HTML purgeable. For example, if you use string concatenation to create a class name, PurgeCSS won't be able to figure out what that is. For more information on writing purgeable HTML + other methods to control file size, [click here](https://tailwindcss.com/docs/controlling-file-size).
+
+The pattern current used in the template when it comes to writing React components with Tailwind CSS is as follows:
+
+```jsx
+const classes = {
+  wrapper: 'm-12 p-12',
+  text: 'text-lg text-gray-600 font-light',
+};
+
+const MyComponent = () => {
+  return (
+    <div className={classes.wrapper}>
+      <p className={classes.text}>Some text here.</p>
+    </div>
+  );
+};
+```
+
+All the possible classes are defined above and just referenced in the `className` attribute of each element. This comes with a couple benefits: 
+
+1. It keeps the overall component definition slightly cleaner (i.e. there isn't a huge class string)
+2. You can reuse styles a little easier
+3. This still qualifies as purgeable HTML (assuming the class is actually used)
+
+This is however just a recommendation, the template allows you to write the components in any way you wish.
+
 ## License
 
 Licensed under the [MIT License](https://github.com/RyanFitzgerald/devfolio/blob/master/LICENSE.md).
