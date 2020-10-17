@@ -93,12 +93,36 @@ The _Skills_ section is defined as an array under the `skills` key in the config
 
 ## Setting Up The Blog
 
+The blog is an optional portion of the template and the content for it exists in `content/blog`. All blog posts are written in Markdown by default and the template ships with a couple sample posts. If you'd rather not have a blog, simply delete the sample posts inside the folder while ensuring that the folder itself (`content/blog`) is kept.
+
+### Adding a New Blog Post
+
+To create a new blog post, simply add a new URL safe folder in `content/blog` (this will be your posts URL as well). For example, if you create a folder `content/blog/hello-world`, the resulting path to your blog post will be `mysite.com/blog/hello-world`.
+
+Next, create an `index.md` file with the following at the top of the file (including the lines):
+
+```
+---
+title: My Blog Title
+date: '2020-09-20T12:00:00.00Z'
+description: 'Some Short Blog Post Description'
+---
+
+My blog post starts here.
+```
+
+The `title` attribute is the post's title, the date is the date that shows on the blog post, and the description if a brief excerpt of the post that shows on the home page and the blog page.
+
+After that is done, you should now see you're latest blog post on your site (if you deploy or run it locally). If you don't, it may be because the date was entered incorrectly as the blog lists only the most recent 5 posts based on the provided dates.
+
 ## Running Locally
+
+If you're happy with the current layout and design, you can simply edit your `gatsby-config.js` without the need to run it locally. With that said, if you want to spin it up locally, simply run `npm install` to install the required dependencies and then `npm run develop` to start the Gatsbt development server.
 
 ## Deploying
 
 ## Customization
 
-## Contributing
-
 ## License
+
+Licensed under the [MIT License](https://github.com/RyanFitzgerald/devfolio/blob/master/LICENSE.md).
