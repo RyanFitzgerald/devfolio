@@ -169,6 +169,14 @@ One thing to note is that if you wish to query data in one of the components, yo
 
 ### Adding or Updating Pages
 
+The pages for the template exist in `src/pages` and are simply React components that get treated as pages by GatsbyJS. By default, the following pages exist in the template:
+
+- `src/pages/index.jsx` - the main homepage
+- `src/pages/blog.jsx` - the main `/blog` homepage
+- `src/pages/404.jsx` - the default 404 page
+
+You can easily modify those pages and create new ones. Gatsby core automatically takes any React component in `src/pages/*` and turns it into a separate page (they must export a component as a default export). For example, if you make a new component as `src/pages/page1.jsx`, it will automatically create a new page that can be visited via `mysite.com/page1`. For more information on pages as well as other ways they can be created, [click here](https://www.gatsbyjs.com/docs/creating-and-modifying-pages/).
+
 ### Adding or Updating Styles
 
 ## License
