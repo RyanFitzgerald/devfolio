@@ -155,6 +155,22 @@ If you want to learn more about the many other options to deploy, take a look at
 
 ## Customization
 
+Although Devfolio is fully production-ready out of the box, it was also made with customization in mind.
+
+### Gatsby Customization
+
+Devfolio is built on GatsbyJS, so it comes with all the benefits of it. You can make use of the thousands of Gatsby Plugins, utilize the Gatsby APIs (SSR, Browser, etc), and much more. For more information, check out [their great docs](https://www.gatsbyjs.com/docs/).
+
+### Adding or Updating Components
+
+GatsbyJS is based on React, so the template uses a bunch of React components behind the scenes. These components can be found in `src/components` in case you wish to create more or edit the current ones. With the exception of a couple GatsbyJS-specific components being imported, everything else is traditional React.
+
+One thing to note is that if you wish to query data in one of the components, you can do so with the `<StaticQuery/>` component that comes with GatsbyJs. For more information, [click here](https://www.gatsbyjs.com/docs/static-query/#reach-skip-nav).
+
+### Adding or Updating Pages
+
+### Adding or Updating Styles
+
 ## License
 
 Licensed under the [MIT License](https://github.com/RyanFitzgerald/devfolio/blob/master/LICENSE.md).
