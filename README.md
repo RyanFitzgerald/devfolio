@@ -123,6 +123,36 @@ If you're happy with the current layout and design, you can simply edit your `ga
 
 ## Deploying
 
+Devfolio is a fully static website by default, so the deployment options are fairly endless. Regardless of deployment method, the same general idea applies. You first build the static production site by running `npm run build` and then deploy the resulting static assets wherever you want.
+
+With that said, some deployment options are even easier so I will provide a couple examples below:
+
+### Netlify
+
+My deployment source of choice is [Netlify](https://www.netlify.com/) and is where my own [personal site](https://rfitz.io) is hosted. They have a Free Plan and automatically deploy changes to your `master` branch if you connect with GitHub or GitLab.
+
+For the easiest setup possible, simply click:
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/RyanFitzgerald/devfolio"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Netlify"/></a>
+
+If you'd rather run through the steps manually, start by creating a free Netlify account with your GitHub. 
+
+Next, click **New Site From Git** and click **GitHub** (or another) as the provider.
+
+After that, select the repository where you cloned this into. If you don't see it, you may need to configure the Netlify App on Github via the link they provide.
+
+![Netlify Step 2](https://user-images.githubusercontent.com/9112801/96353255-4bef9d00-1098-11eb-88ba-1ae7a4cec8d3.png)
+
+Finally, ensure that it set the _Basic Build Settings_ correctly. You want to ensure that the **Build Command** is set to `gatsby build` and the **Publish Directory** is set to `public/`. Once complete, click **Deploy Site** and you should be good to go!
+
+### GitHub Pages
+
+If you'd like, you can setup a build pipeline fairly easily that allows you to use GitHub Pages. To find more information, [read this guide](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/).
+
+### Other
+
+If you want to learn more about the many other options to deploy, take a look at the [Deploying & Hosting](https://www.gatsbyjs.com/docs/deploying-and-hosting/) section of the GatsbyJS docs where they go through examples on how to deploy on Gatsby Cloud, Azure, AWS Amplify, AWS S3, and many more.
+
 ## Customization
 
 ## License
