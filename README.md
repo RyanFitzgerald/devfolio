@@ -4,15 +4,14 @@ Devfolio is a modern and production-ready personal portfolio and blog template b
 
 Some of the features include:
 
-- Blazing Fast
 - Built with React on GatsbyJS (however, no React knowledge required)
 - Styled with Tailwind
 - Simple Configuration
-- Zero Setup Required
 - Production Ready & Deploy in Seconds
-- Write Blog Posts in Markdown and with Syntax Highlighting
+- Write Blog Posts in Markdown (with Syntax Highlighting)
 - Mobile Friendly
-- Extend and customize as needed
+- Extend and Customize as Needed
+- Blazing Fast 🙄
 
 **[Need help with the template or have suggestions? Reach out on Twitter any time!](https://twitter.com/rfitzio)**
 
