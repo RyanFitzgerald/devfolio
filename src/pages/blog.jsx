@@ -17,7 +17,7 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
-      <SEO />
+      <SEO title="Blog" />
       <Header metadata={data.site.siteMetadata} />
       {posts && posts.length && <BlogPosts posts={posts} />}
     </Layout>
