@@ -44,15 +44,15 @@ To get started, either fork or clone the repo. Next, open `gatsby-config.js` whi
 
 ### General
 
-| Option | Description | Required |
-| ------ | ----------- | -------- |
-| `siteUrl` | The URL of your site | Yes |
-| `name` | Your name | Yes |
-| `title` | The title of your site | Yes |
-| `description` | The description of your site | Yes |
-| `author` | Your Twitter Handle | No |
-| `github` | Your GitHub Profile URL | No |
-| `linkedin` | Your LinkedIn Profile URL | No |
+| Option        | Description                  | Required |
+| ------------- | ---------------------------- | -------- |
+| `siteUrl`     | The URL of your site         | Yes      |
+| `name`        | Your name                    | Yes      |
+| `title`       | The title of your site       | Yes      |
+| `description` | The description of your site | Yes      |
+| `author`      | Your Twitter Handle          | No       |
+| `github`      | Your GitHub Profile URL      | No       |
+| `linkedin`    | Your LinkedIn Profile URL    | No       |
 
 ### About Me
 
@@ -95,7 +95,7 @@ The _Skills_ section is defined as an array under the `skills` key in the config
 
 ## Setting Up The Blog
 
-The blog is an optional portion of the template and the content for it exists in the `content/blog` folder. All blog posts are written in Markdown by default and the template ships with a couple sample posts so you can get an idea of what's possible (i.e. syntax highlighting). If you'd rather not have a blog, simply delete the sample posts inside the folder while ensuring that the folder itself (`content/blog`) is kept as Gatsby still looks for it. If there are no posts in the folder, you will not see a Blog link at the top nor will you see the _Latest Posts_ section on the homepage. Once you add your first post, this will re-appear.
+The blog is an optional portion of the template and the content for it exists in the `content/blog` folder. All blog posts are written in Markdown by default and the template ships with a couple sample posts so you can get an idea of what's possible (i.e. syntax highlighting). If you'd rather not have a blog, simply delete the sample posts inside the folder while ensuring that the folder itself (`content/blog`) is kept as Gatsby still looks for it (you may also need to add `.gitkeep` to the folder so git recognizes it). If there are no posts in the folder, you will not see a Blog link at the top nor will you see the _Latest Posts_ section on the homepage. Once you add your first post, this will re-appear.
 
 ### Adding a New Blog Post
 
@@ -135,7 +135,7 @@ For the easiest setup possible, simply click:
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/RyanFitzgerald/devfolio"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Netlify"/></a>
 
-If you'd rather run through the steps manually, start by creating a free Netlify account with your GitHub. 
+If you'd rather run through the steps manually, start by creating a free Netlify account with your GitHub.
 
 Next, click **New Site From Git** and click **GitHub** (or another) as the provider.
 
@@ -200,7 +200,7 @@ const MyComponent = () => {
 };
 ```
 
-All the possible classes are defined above and just referenced in the `className` attribute of each element. This comes with a couple benefits: 
+All the possible classes are defined above and just referenced in the `className` attribute of each element. This comes with a couple benefits:
 
 1. It keeps the overall component definition slightly cleaner (i.e. there isn't a huge class string)
 2. You can reuse styles a little easier
