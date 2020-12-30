@@ -18,7 +18,7 @@ const classes = {
 };
 
 const Header = ({ metadata = {}, noBlog = false }) => {
-  const twitter = get(metadata, 'author', false);
+  const angel = get(metadata, 'angel', false);
   const github = get(metadata, 'github', false);
   const linkedin = get(metadata, 'linkedin', false);
 
@@ -35,13 +35,13 @@ const Header = ({ metadata = {}, noBlog = false }) => {
         </h1>
         <p className={classes.description}>{metadata.description}</p>
         <ul className={classes.list}>
-          {twitter && (
+          {angel && (
             <li className={classes.item}>
               <a
                 className={classes.link}
-                href={`https://twitter.com/${twitter}`}
+                href={`https://twitter.com/${angel}`}
               >
-                Twitter
+                Angel
               </a>
             </li>
           )}
@@ -59,7 +59,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </a>
             </li>
           )}
-          {!noBlog && (
+          {noBlog && (
             <li className={classes.item}>
               <Link className={classes.link} to="/blog">
                 Blog
