@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://anidever.github.io/`,
+    siteUrl: `http://anidever.com/`,
     // Your Name
     name: 'Ani Dever',
     // Main Site Title
@@ -13,7 +13,7 @@ module.exports = {
     // Optional: Github account URL
     github: `https://github.com/anidever`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ani-dever/`,
+    linkedin: `https://www.linkedin.com/in/anidever/`,
     // Content of the About Me section
     about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
