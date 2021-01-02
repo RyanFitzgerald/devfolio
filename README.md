@@ -15,13 +15,13 @@ Some of the features include:
 - Extend and Customize as Needed
 - Blazing Fast 🙄
 
-**[Need help with the template or have suggestions? Reach out on Twitter anytime!](https://twitter.com/rfitzio)**
+**[Need help with the template or have suggestions? Reach out to the author on Twitter anytime!](https://twitter.com/rfitzio)**
 
 ## Demo
 
 For a live demo of the base template, [click here](https://elastic-meninsky-aa7c74.netlify.app/).
 
-For a live demo of a slightly customized version of the template (my own personal site), [click here](https://rfitz.io).
+For a live demo of a slightly customized version of the template (my own personal site), [click here](https://anidever.com).
 
 ## Contents
 
@@ -50,7 +50,7 @@ To get started, either fork or clone the repo. Next, open `gatsby-config.js` whi
 | `name`        | Your name                    | Yes      |
 | `title`       | The title of your site       | Yes      |
 | `description` | The description of your site | Yes      |
-| `author`      | Your Twitter Handle          | No       |
+| `angel`       | Your Angel Profile URL       | No       |
 | `github`      | Your GitHub Profile URL      | No       |
 | `linkedin`    | Your LinkedIn Profile URL    | No       |
 
@@ -147,7 +147,7 @@ Finally, ensure that it set the _Basic Build Settings_ correctly. You want to en
 
 ### GitHub Pages
 
-If you'd like, you can setup a build pipeline fairly easily that allows you to use GitHub Pages. To find more information, [read this guide](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/).
+If you'd like, you can setup a build pipeline fairly easily that allows you to use GitHub Pages. To find more information, [read this guide](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/). I will update this section ... Currently my choice of deployment is Github Pages, once I can configure a custom domain I will come back here to write more.
 
 ### Other
 
