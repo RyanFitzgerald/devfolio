@@ -8,7 +8,7 @@ module.exports = {
     title: `Ani Dever | Full-Stack Developer`,
     // Description that goes under your name in main bio
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
-    // Optional: Twitter account handle
+    // Optional: Angel account URL
     angel: `https://angel.co/u/ani-dever`,
     // Optional: Github account URL
     github: `https://github.com/anidever`,
@@ -42,17 +42,17 @@ module.exports = {
       {
         name: 'Acme Corp',
         description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        link: 'https://github.com/anidever/',
       },
       {
         name: 'Globex Corp',
         description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        link: 'https://github.com/anidever/',
       },
       {
         name: 'E Corp',
         description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        link: 'https://github.com/anidever/',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
