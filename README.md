@@ -145,6 +145,16 @@ After that, select the repository where you cloned this into. If you don't see i
 
 Finally, ensure that it set the _Basic Build Settings_ correctly. You want to ensure that the **Build Command** is set to `gatsby build` and the **Publish Directory** is set to `public/`. Once complete, click **Deploy Site** and you should be good to go!
 
+### Vercel
+
+Another straightforward way to deploy devfolio is to use [Vercel](https://vercel.com/). The platform also offers a Hobby plan that will allow you to host the project free-of-charge.
+
+You can deploy devfolio with just a few clicks:
+
+<a href="https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FRyanFitzgerald%2Fdevfolio&project-name=devfolio&repository-name=devfolio"><img src="https://vercel.com/button" alt="Vercel"/></a>
+
+As with Netlify, the deployment can be also done manually following identical settings.
+
 ### GitHub Pages
 
 If you'd like, you can setup a build pipeline fairly easily that allows you to use GitHub Pages. To find more information, [read this guide](https://www.gatsbyjs.com/docs/how-gatsby-works-with-github-pages/).
