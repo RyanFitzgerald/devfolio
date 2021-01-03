@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `http://anidever.com/`,
+    siteUrl: `https://anidever.com/`,
     // Your Name
     name: 'Ani Dever',
     // Main Site Title
@@ -40,19 +40,19 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
+        name: 'Opus One Solutions',
+        description: 'Software Developer, 2019 - Present',
         link: 'https://github.com/anidever/',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/anidever/',
+        name: 'Enerjee',
+        description: 'Founder, 2018 - 2019',
+        link: 'https://enerjee.net',
       },
       {
-        name: 'E Corp',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/anidever/',
+        name: 'Shared Reality Lab, McGill University',
+        description: 'Graduate Research Assistant, Sep 2017 - Mar 2018',
+        link: 'http://srl.mcgill.ca/',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
@@ -60,11 +60,7 @@ module.exports = {
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
-      },
-      {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+          'Python, Flask, JavaScript (ES6+), TypeScript, React, GatsbyJS',
       },
       {
         name: 'Other',
