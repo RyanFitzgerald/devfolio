@@ -25,16 +25,16 @@ module.exports = {
         link: '',
       },
       {
-        name: 'Cool Project',
+        name: 'Weather Widget',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: '',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        link: 'https://github.com/anidever/tempo-reacts',
       },
       {
-        name: 'Another Cool Project',
+        name: 'Tic-Tac-Toe',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: '',
+          'Simple tic-tac-toe game built with React & TS',
+        link: 'https://github.com/anidever/ttt-reacts',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
