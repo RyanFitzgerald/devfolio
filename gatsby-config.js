@@ -115,6 +115,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-dark-mode`,
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-google-analytics`,

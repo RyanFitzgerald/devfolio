@@ -2,7 +2,7 @@ import React from 'react';
 
 const classes = {
   wrapper: 'p-8 relative max-w-screen-xl xs:p-24',
-  outerWrapper: 'relative',
+  outerWrapper: 'relative dark:bg-gray-700',
   svg: 'hidden fixed transform right-0 top-5 z-0 xl:block',
 };
 

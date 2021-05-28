@@ -8,8 +8,8 @@ import SEO from '../components/seo';
 
 const classes = {
   wrapper: 'mt-16 blog-content',
-  title: 'mt-16 text-4xl text-gray-900 font-bold',
-  date: 'text-gray-600 font-light',
+  title: 'mt-16 text-4xl text-gray-900 dark:text-white font-bold',
+  date: 'text-gray-600 dark:text-gray-200 font-light',
 };
 
 const BlogPost = ({ data }) => {
