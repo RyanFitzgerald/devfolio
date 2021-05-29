@@ -5,11 +5,13 @@
 @layer base {
   .blog-content {
     @apply text-gray-600;
+    @apply dark:text-gray-200;
     @apply max-w-screen-md;
   }
 
   .blog-content a {
     @apply text-black;
+    @apply dark:text-blue-400;
     @apply underline;
   }
 
@@ -42,6 +44,7 @@
   .blog-content h2 {
     @apply text-2xl;
     @apply text-gray-900;
+    @apply dark:text-white;
     @apply font-bold;
     @apply my-3;
   }
@@ -49,18 +52,21 @@
   .blog-content h3 {
     @apply text-xl;
     @apply text-gray-900;
+    @apply dark:text-white;
     @apply font-bold;
     @apply my-3;
   }
 
   .blog-content h4 {
     @apply text-gray-900;
+    @apply dark:text-white;
     @apply font-bold;
     @apply my-3;
   }
 
   .blog-content h5 {
     @apply text-gray-900;
+    @apply dark:text-white;
     @apply text-sm;
     @apply font-bold;
     @apply my-3;
@@ -68,6 +74,7 @@
 
   .blog-content h6 {
     @apply text-gray-700;
+    @apply dark:text-white;
     @apply text-xs;
     @apply font-bold;
     @apply my-3;

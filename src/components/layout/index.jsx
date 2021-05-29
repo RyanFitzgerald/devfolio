@@ -2,7 +2,7 @@ import React from 'react';
 
 const classes = {
   wrapper: 'p-8 relative max-w-screen-xl xs:p-24',
-  outerWrapper: 'relative',
+  outerWrapper: 'relative dark:bg-gray-700',
   svg: 'hidden fixed transform right-0 top-5 z-0 xl:block',
 };
 
@@ -30,8 +30,7 @@ const Layout = ({ children }) => {
               y="0"
               width="4"
               height="4"
-              className="text-gray-200"
-              fill="#edf2f7"
+              className="text-gray-200 dark:text-gray-600 fill-current"
             />
           </pattern>
         </defs>
