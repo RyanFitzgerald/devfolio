@@ -17,6 +17,7 @@ module.exports = {
     // Content of the About Me section
     about: `I'm a Junior at the Liberal Arts and Science Academy in Austin, Texas and will hopefully be pursuing a degree in Computer Science in university. I am passionate about Graphic Design, specifically UI/UX, Game Design, and economic implementations of CS (e.g. financial data analysis).`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+    pathPrefix: "/purplehayes.me",
     projects: [
       {
         name: 'Doordle',
