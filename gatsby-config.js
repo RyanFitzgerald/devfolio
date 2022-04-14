@@ -15,13 +15,19 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/hayes-bounds-441a7b210/`,
     // Content of the About Me section
-    about: `I'm a Junior at the Liberal Arts and Science Academy in Austin, Texas and will hopefully be pursuing a degree in Computer Science in university. I am passionate about Graphic Design, specifically UI/UX, Game Design, and economic implementations of Computer Science (i.e. financial data analysis).`,
+    about: `I'm a Junior at the Liberal Arts and Science Academy in Austin, Texas and will hopefully be pursuing a degree in Computer Science in university. I am passionate about Graphic Design, specifically UI/UX, Game Design, and economic implementations of CS (e.g. financial data analysis).`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
         name: 'Doordle',
         description:
           'A concept door that opens based on completion of a Wordle puzzle, input of an NFC tag, or OTP on a keypad.',
+        link: 'https://github.com/hebounds/',
+      },
+      {
+        name: 'Minecraft Plugins',
+        description:
+          'BoosterBossbar: Rainbow "interactive" boss bar, TurkeyEventPlugin: Thanksgiving plugin, spawns Turkeys that drop eggs with predetermined rewards, more (private plugins)',
         link: 'https://github.com/hebounds/',
       } // maybe need a , here
     ],
@@ -47,7 +53,7 @@ module.exports = {
       {
         name: 'Other',
         description:
-          'Agile, Kubernetes, Eagle, AutoCAD, LibreCAD, KiCad, Adobe Suite',
+          'Agile, Kubernetes, Eagle, AutoCAD, LibreCAD, KiCad, Adobe Suite (Illustrator, Photoshop, Lightroom, InDesign)',
       },
     ],
   },
