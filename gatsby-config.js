@@ -5,7 +5,7 @@ module.exports = {
     // Your Name
     name: 'Hayes Bounds',
     // Main Site Title
-    title: `Hayes Bounds | Student`,
+    title: `purplehayes | portfolio`,
     // Description that goes under your name in main bio
     description: `Aspiring Software Engineer `,
     // Optional: Twitter account handle
