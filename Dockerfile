@@ -22,14 +22,14 @@ CMD ["gatsby", "develop", "-H", "0.0.0.0"]
 EXPOSE 8000
 
 # FROM node:alpine
-# 
+#
 # COPY package.json /home/node
-# 
+#
 # RUN apk update && \
 #     apk --no-cache --virtual .build-deps add python3 make gcc g++ gcompat binutils && \
 #     apk --no-cache --virtual .build-deps add vips-dev --repository https://dl-3.alpinelinux.org/alpine/edge/testing/ && \
 #     cd /home/node && npm i && \
 #     apk del .build-deps
-# 
+#
 # USER node
 # WORKDIR /home/node
