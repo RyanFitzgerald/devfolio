@@ -4,35 +4,33 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPost = path.resolve(`./src/templates/blog-post.jsx`);
-  const result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+  const blogPostTemplate = path.resolve(`./src/templates/blog-post.jsx`);
+  const result = await graphql(`
+    {
+      allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              type
+              title
             }
           }
         }
       }
-    `
-  );
+    }
+  `);
 
   if (result.errors) {
     throw result.errors;
   }
+  const posts = result.data.allMarkdownRemark.edges.filter(
+    (edge) => edge.node.frontmatter.type === 'blog'
+  );
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges;
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
@@ -40,7 +38,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: post.node.fields.slug,
-      component: blogPost,
+      component: blogPostTemplate,
       context: {
         slug: post.node.fields.slug,
         previous,
@@ -55,10 +53,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode });
+    const slugPrefix = node.frontmatter.type === 'blog';
     createNodeField({
       name: `slug`,
       node,
-      value: `/blog${value}`,
+      value: `${slugPrefix}${value}`,
     });
   }
 };
@@ -83,7 +82,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type SectionItem {
       name: String!
       description: String!
-      link: String!
+      link: String
     }
 
     type MarkdownRemark implements Node {
@@ -92,6 +91,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type Frontmatter {
+      type: String
       title: String
       description: String
       date: Date @dateformat
