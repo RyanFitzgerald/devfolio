@@ -125,8 +125,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `trooms.dev`,
-        short_name: `trooms.dev`,
+        name: `devfolio`,
+        short_name: `devfolio`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`, // This color appears on mobile
