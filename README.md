@@ -143,6 +143,16 @@ After that, select the repository where you cloned this into. If you don't see i
 
 ![Netlify Step 2](https://user-images.githubusercontent.com/9112801/96353255-4bef9d00-1098-11eb-88ba-1ae7a4cec8d3.png)
 
+Because this repository is old, there's a few more things you should do.
+
+First you must add an environmental variable NPM_FLAGS in Netlify and assign it a value of the npm flag --legacy-peer-deps.
+
+1. Go to the deploys section in your settings.
+2. Scroll to the Environmental variables section.
+3. Click on Edit variables and add the pair: NPM_FLAGS on the left and --legacy-peer-deps on the right. You should also add CI on the left and false on the right.
+
+I've added --legacy-peer-deps to the .npmrc, however netlify does not abide by it when building via gatsby.
+
 Finally, ensure that it set the _Basic Build Settings_ correctly. You want to ensure that the **Build Command** is set to `gatsby build` and the **Publish Directory** is set to `public/`. Once complete, click **Deploy Site** and you should be good to go!
 
 ### Vercel
