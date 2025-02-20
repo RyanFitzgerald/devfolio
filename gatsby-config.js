@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
     // Your Name
     name: 'Ryan Fitzgerald',
     // Main Site Title
